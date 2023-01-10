@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    image: botwithbot
+    container_name: cherrypy_container
+    build: .
+    ports:
+      - "8080:8080"
+    command: python entrypoint.py
