@@ -23,7 +23,7 @@ COPY requirements.txt .
 RUN pip3 install -r requirements.txt
 
 # Copy code from development container
-COPY . .
+COPY ./volumebindmount .
 
 # Set the entry point
 CMD python app.py
