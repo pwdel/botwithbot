@@ -26,4 +26,4 @@ RUN pip3 install -r requirements.txt
 COPY . .
 
 # Set the entry point
-CMD ["python", "entrypoint.py"]
+CMD python app.py
