@@ -7,7 +7,11 @@ services:
     build: .
     ports:
       - 8080:8080
-    command: python app.py 
+    command: /bin/python3.10 app.py
     extra_hosts:
       - "host.docker.internal:host-gateway"
     tty: true
+    volumes:
+      - type: bind
+        source: ./volumebindmount
+        target: /home/

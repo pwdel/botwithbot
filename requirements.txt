@@ -1,1 +1,6 @@
-cherrypy
+CherryPy==18.7.0 # July 10th, 2022
+tensorflow==2.8.0 # Feb 2nd, 2022
+tokenizers==0.13.2 # November 7th, 2022
+transformers==4.25.1 # December 1st, 2022
+numpy==1.21.2 # Aug 15th, 2021
+protobuf==3.20.* # Apr 1st, 2022
