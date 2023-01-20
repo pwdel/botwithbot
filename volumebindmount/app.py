@@ -44,12 +44,26 @@ class SayWords:
             Your answer: 
             {sentence_return}
             <hr>
+            Enter your question for the nice chatbot:
+            <form method="get" action="/">
+                <input type="text" name="words" />
+                <input type="submit" />
+            </form>
             </body></html>
             """
             return returnstring
         else:
-            return '<html><body>Please enter `words` in the URL as a query parameter, seperated by `%` for example: `/?words=how%are%you?` </body></html>'
-    
+            return '''
+            <html>
+                <body>
+                    Enter your question for the nice chatbot:
+                    <form method="get" action="/">
+                        <input type="text" name="words" />
+                        <input type="submit" />
+                    </form>
+                </body>
+            </html>
+            '''
 
 
 if __name__ == '__main__':
